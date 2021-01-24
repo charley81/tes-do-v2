@@ -9,7 +9,13 @@
   --borderRadius: 3px;
   --transition: all 0.3s ease-in-out;
   --fontFamily: 'Comfortaa', cursive;
-  --maxWidth: 600px;
+  --maxWidth: 800px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
