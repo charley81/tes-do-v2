@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 :root {
-  --colorPrimary: green;
+  --colorPrimary: #e63946;
+  --colorSecondary: #1d3557;
+  --colorLight: #f3eff5;
+  --colorMid: #bfc0c0;
+  --colorDark: #090909;
+  --borderRadius: 3px;
+  --transition: all 0.3s ease-in-out;
+  --fontFamily: 'Comfortaa', cursive;
+  --maxWidth: 600px;
 }
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: var(--fontFamily);
+  background-color: var(--colorLight);
+  color: var(--colorDark);
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
