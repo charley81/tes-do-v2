@@ -12,7 +12,7 @@ const Header = () => {
 
         .title {
           max-width: var(--maxWidth);
-          margin: auto;
+          margin: auto;s
         }
       `}
     >
