@@ -26,3 +26,8 @@ body {
   line-height: 1.5;
   letter-spacing: 2px;
 }
+
+.container {
+  max-width: var(--maxWidth);
+  margin: auto;
+}

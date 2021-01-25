@@ -25,6 +25,7 @@ function App() {
       // handle editing
     } else {
       // add item
+      showAlert(true, 'success', 'item added')
       const newItem = { id: new Date().getTime().toString(), text: todo }
       setList([...list, newItem])
       setTodo('')
@@ -38,9 +39,13 @@ function App() {
   return (
     <div>
       <Header />
-      {alert.show && <Alert {...alert} alert={alert} removeAlert={showAlert} />}
-      <List list={list} />
-      <Form handleSubmit={handleSubmit} todo={todo} setTodo={setTodo} />
+      <div className="container">
+        {alert.show && (
+          <Alert {...alert} alert={alert} removeAlert={showAlert} />
+        )}
+        <List list={list} />
+        <Form handleSubmit={handleSubmit} todo={todo} setTodo={setTodo} />
+      </div>
     </div>
   )
 }
