@@ -1,11 +1,12 @@
 import React from 'react'
 
-const List = () => {
+const List = ({ list }) => {
   return (
     <div>
-      <p>list item 1</p>
-      <p>list item 2</p>
-      <p>list item 3</p>
+      {list.map(item => {
+        const { id, text } = item
+        return <p key={id}>{text}</p>
+      })}
     </div>
   )
 }
