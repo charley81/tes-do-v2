@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 import React from 'react'
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai'
 
-const List = ({ list }) => {
+const List = ({ list, removeItem, editItem }) => {
   return (
     <div
       css={css`
@@ -19,10 +19,10 @@ const List = ({ list }) => {
           <div key={id} className="list-item">
             <p>{text}</p>
             <div className="icon-container">
-              <button>
+              <button onClick={() => editItem(id)}>
                 <AiFillEdit />
               </button>
-              <button>
+              <button onClick={() => removeItem(id)}>
                 <AiFillDelete />
               </button>
             </div>

@@ -13,6 +13,8 @@ const Alert = ({ removeAlert, type, text }) => {
   return (
     <div
       css={css`
+        text-align: center;
+
         .danger {
           color: var(--colorPrimary);
         }

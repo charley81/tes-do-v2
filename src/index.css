@@ -29,5 +29,8 @@ body {
 
 .container {
   max-width: var(--maxWidth);
-  margin: auto;
+  margin: 10vh auto 0;
+  padding: 1rem;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.4);
+  border-radius: var(--borderRadius);
 }
